@@ -24,7 +24,7 @@ public class PositiveTests {
 
         driver.manage().window().maximize();
 
-        // Open main page
+        //Open main page
         System.out.println("Go to main page");
         String url = "https://the-internet.herokuapp.com";
         driver.get(url);

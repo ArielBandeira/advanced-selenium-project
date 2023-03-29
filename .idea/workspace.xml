@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="14410494-553f-4bbb-a30e-9bd0b9bef812" name="Changes" comment="" />
+    <list default="true" id="14410494-553f-4bbb-a30e-9bd0b9bef812" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/herokuapp/theinternet/PositiveTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/herokuapp/theinternet/PositiveTests.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
