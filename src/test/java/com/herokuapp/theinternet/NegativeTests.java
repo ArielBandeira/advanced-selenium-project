@@ -7,6 +7,7 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 public class NegativeTests {
@@ -22,7 +23,8 @@ public class NegativeTests {
     }
 
     @Test
-    public void negativeTest() {
+    @Parameters({ "username", "password", "errorMessage" })
+    public void negativeTest(String username, String password, String errorMessage) {
         //Open main page
         System.out.println("Go to main page");
         String url = "https://the-internet.herokuapp.com";
@@ -35,13 +37,13 @@ public class NegativeTests {
 
         //Enter username
         System.out.println("Enter username");
-        WebElement username = driver.findElement(By.id("username"));
-        username.sendKeys("tomsmith");
+        WebElement usernameInput = driver.findElement(By.id("username"));
+        usernameInput.sendKeys(username);
 
         //Enter password
         System.out.println("Enter password");
-        WebElement password = driver.findElement(By.id("password"));
-        password.sendKeys("SuperSecretPassword!");
+        WebElement passwordInput = driver.findElement(By.id("password"));
+        passwordInput.sendKeys(password);
 
         //Press login button
         System.out.println("Press login button");
@@ -49,13 +51,11 @@ public class NegativeTests {
         loginButton.click();
 
         //Verify if successful message is displayed
-        System.out.println("Verify if successful message is displayed");
+        System.out.println("Verify if right error message is displayed");
+        String actualErrorMessage = driver.findElement(By.id("flash")).getText();
+        Assert.assertTrue(actualErrorMessage.contains(errorMessage), "Error message is not the same as the expected\nExpected: " + errorMessage + "\nActual :" + actualErrorMessage);
 
-
-        //Close browser
-        tearDown();
     }
-
 
     //Close browser
     @AfterMethod
