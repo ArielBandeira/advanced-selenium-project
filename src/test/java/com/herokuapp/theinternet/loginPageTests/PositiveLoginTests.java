@@ -15,15 +15,15 @@ public class PositiveLoginTests extends TestUtilities {
 
     @Test
     public void loginTest() {
-        System.out.println("Stating Login Test...");
+        log.info("Stating Login Test...");
 
         //Open main page
-        System.out.println("Go to main page");
+        log.info("Go to main page");
         String url = "https://the-internet.herokuapp.com";
         driver.get(url);
 
         //Click on Form Authentication link
-        System.out.println("Go to Login Page");
+        log.info("Go to Login Page");
         WebElement formAuthLink = driver.findElement(By.linkText("Form Authentication"));
         formAuthLink.click();
 
@@ -33,33 +33,33 @@ public class PositiveLoginTests extends TestUtilities {
         Assert.assertTrue(expectedLoginPageUrl.matches(actualPage), "\nLogin page is not the right one!\n" + "Expected url: " + expectedLoginPageUrl + "\nActual page url: " + actualPage);
 
         //Enter username
-        System.out.println("Enter username");
+        log.info("Enter username");
         WebElement username = driver.findElement(By.id("username"));
         username.sendKeys("tomsmith");
 
         //Enter password
-        System.out.println("Enter password");
+        log.info("Enter password");
         WebElement password = driver.findElement(By.id("password"));
         password.sendKeys("SuperSecretPassword!");
 
         //Login button is visible
-        System.out.println("Verify if Login button is visible");
+        log.info("Verify if Login button is visible");
         WebElement loginButton = driver.findElement(By.xpath("//form[@id='login']/button"));
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(3));
         wait.until(ExpectedConditions.elementToBeClickable(loginButton));
 
         //Press login button
-        System.out.println("Press login button");
+        log.info("Press login button");
         loginButton.click();
 
         //Verify if is the right url
-        System.out.println("Verify if is the right url");
+        log.info("Verify if is the right url");
         String expectedAfterLoginPage = "https://the-internet.herokuapp.com/secure";
         String actualAfterLoginPage = driver.getCurrentUrl();
         Assert.assertTrue(expectedAfterLoginPage.matches(actualAfterLoginPage), "\nAfter login page is not the right one!\n" + "Expected url: " + expectedLoginPageUrl + "\nActual page url: " + actualPage);
 
         //Verify if successful message is displayed
-        System.out.println("Verify if successful message is displayed");
+        log.info("Verify if successful message is displayed");
         WebElement successMessage = driver.findElement(By.xpath("/html//div[@id='flash']"));
         String expectedMessage = "You logged into a secure area!";
         String actualMessage = successMessage.getText();

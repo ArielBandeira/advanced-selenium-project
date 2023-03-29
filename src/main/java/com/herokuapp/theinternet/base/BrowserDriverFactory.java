@@ -1,5 +1,6 @@
 package com.herokuapp.theinternet.base;
 
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
@@ -8,13 +9,16 @@ public class BrowserDriverFactory {
 
     private ThreadLocal<WebDriver> driver = new ThreadLocal<WebDriver>();
     private String browser;
+    private Logger log;
 
-    public BrowserDriverFactory(String browser) {
-        this.browser = browser.toLowerCase();
+    public BrowserDriverFactory(String browser, Logger log) {
+        this.browser = browser;
+        this.log = log;
     }
 
     public WebDriver createDriver() {
-        System.out.println("Create browser: " + browser);
+        //Create driver
+        log.info("Create browser: " + browser);
 
         switch (browser) {
             case "Edge" -> driver.set(new EdgeDriver());
