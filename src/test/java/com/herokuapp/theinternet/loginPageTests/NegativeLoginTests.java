@@ -1,26 +1,13 @@
-package com.herokuapp.theinternet;
+package com.herokuapp.theinternet.loginPageTests;
 
+import com.herokuapp.theinternet.base.BaseTest;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.edge.EdgeDriver;
 import org.testng.Assert;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
-public class NegativeTests {
-
-    private WebDriver driver;
-    @BeforeMethod
-    public void setUp() {
-        //Open browser
-        System.out.println("Open browser");
-        driver = new EdgeDriver();
-
-        driver.manage().window().maximize();
-    }
+public class NegativeLoginTests extends BaseTest {
 
     @Test
     @Parameters({ "username", "password", "errorMessage" })
@@ -57,10 +44,4 @@ public class NegativeTests {
 
     }
 
-    //Close browser
-    @AfterMethod
-    private void tearDown() {
-        System.out.println("Close browser");
-        driver.quit();
-    }
 }

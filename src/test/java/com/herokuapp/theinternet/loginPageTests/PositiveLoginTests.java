@@ -1,9 +1,8 @@
-package com.herokuapp.theinternet;
+package com.herokuapp.theinternet.loginPageTests;
 
+import com.herokuapp.theinternet.base.BaseTest;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
@@ -11,18 +10,11 @@ import org.testng.annotations.Test;
 
 import java.time.Duration;
 
-public class PositiveTests {
+public class PositiveLoginTests extends BaseTest {
 
-    private WebDriver driver;
     @Test
     public void loginTest() {
         System.out.println("Stating Login Test...");
-
-        //Open browser
-        System.out.println("Open browser");
-        driver = new EdgeDriver();
-
-        driver.manage().window().maximize();
 
         //Open main page
         System.out.println("Go to main page");
@@ -49,8 +41,6 @@ public class PositiveTests {
         WebElement password = driver.findElement(By.id("password"));
         password.sendKeys("SuperSecretPassword!");
 
-        sleep(3);
-
         //Login button is visible
         System.out.println("Verify if Login button is visible");
         WebElement loginButton = driver.findElement(By.xpath("//form[@id='login']/button"));
@@ -74,18 +64,6 @@ public class PositiveTests {
         String actualMessage = successMessage.getText();
         Assert.assertTrue(actualMessage.contains(expectedMessage), "\nSuccess message not displayed!\n" + "Expected message: " + expectedMessage + "\nActual message: " + actualMessage);
 
-        //Close browser
-        System.out.println("Close browser");
-        driver.quit();
-
-    }
-
-    private static void sleep(long m) {
-        try {
-            Thread.sleep(m);
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
-        }
     }
 
 }
