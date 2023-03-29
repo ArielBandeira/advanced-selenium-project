@@ -5,10 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="14410494-553f-4bbb-a30e-9bd0b9bef812" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/log4J2.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/herokuapp/theinternet/base/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/herokuapp/theinternet/base/BaseTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/herokuapp/theinternet/base/BrowserDriverFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/herokuapp/theinternet/base/BrowserDriverFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/herokuapp/theinternet/loginPageTests/NegativeLoginTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/herokuapp/theinternet/loginPageTests/NegativeLoginTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/herokuapp/theinternet/loginPageTests/PositiveLoginTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/herokuapp/theinternet/loginPageTests/PositiveLoginTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/TestSuites/NegativeLoginTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/TestSuites/NegativeLoginTestSuite.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/TestSuites/PositiveLoginTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/TestSuites/PositiveLoginTestSuite.xml" afterDir="false" />
     </list>
