@@ -31,7 +31,7 @@ public class PositiveTests {
 
         //Click on Form Authentication link
         System.out.println("Go to Login Page");
-        WebElement formAuthLink = driver.findElement(By.xpath("//a[@href='/login']"));
+        WebElement formAuthLink = driver.findElement(By.linkText("Form Authentication"));
         formAuthLink.click();
 
         //Verify if is the right url
