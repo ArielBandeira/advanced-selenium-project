@@ -5,15 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="14410494-553f-4bbb-a30e-9bd0b9bef812" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/log4J2.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/herokuapp/theinternet/base/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/herokuapp/theinternet/base/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/herokuapp/theinternet/base/BrowserDriverFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/herokuapp/theinternet/base/BrowserDriverFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/herokuapp/theinternet/loginPageTests/NegativeLoginTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/herokuapp/theinternet/loginPageTests/NegativeLoginTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/herokuapp/theinternet/loginPageTests/PositiveLoginTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/herokuapp/theinternet/loginPageTests/PositiveLoginTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/TestSuites/NegativeLoginTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/TestSuites/NegativeLoginTestSuite.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/TestSuites/PositiveLoginTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/TestSuites/PositiveLoginTestSuite.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,16 +49,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "run.code.analysis.last.selected.profile": "pProject Default"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="TestNG.C:/Users/ariel/learning_projects/selenium/advanced-selenium-project/src/test/resources/TestSuites/NegativeLoginTestSuite.xml">
     <configuration name="C:/Users/ariel/learning_projects/selenium/advanced-selenium-project/src/test/resources/TestSuites/NegativeLoginTestSuite.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="advanced-selenium-project" />
