@@ -6,8 +6,9 @@ import org.openqa.selenium.WebDriver;
 
 public class WelcomePageObject extends BasePageObject {
 
-    private By formAuthenticationLinkLocator = By.linkText("Form Authentication");
     String pageUrl = "https://the-internet.herokuapp.com";
+    private By formAuthenticationLinkLocator = By.linkText("Form Authentication");
+
     public WelcomePageObject(WebDriver driver, Logger log) {
         super(driver, log);
     }
@@ -15,14 +16,14 @@ public class WelcomePageObject extends BasePageObject {
     //Open page
     public void openPage() {
         log.info("Open page: " + pageUrl);
-        driver.get(pageUrl);
+        openUrl(pageUrl);
         log.info("Page opened!");
     }
 
     //Open login page
     public LoginPage clickFormAuthenticationLink() {
         log.info("Clicking on Form Authentication link on Welcome Page");
-        driver.findElement(formAuthenticationLinkLocator).click();
+        click(formAuthenticationLinkLocator);
         return new LoginPage(driver, log);
     }
 
