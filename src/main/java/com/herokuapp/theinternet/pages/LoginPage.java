@@ -6,16 +6,12 @@ import org.openqa.selenium.WebDriver;
 
 public class LoginPage extends BasePageObject {
 
-    private WebDriver driver;
-    private Logger log;
-
     private By usernameLocator = By.id("username");
     private By passwordLocator = By.id("password");
-private By logInButtonLocator = By.tagName("button");
+    private By logInButtonLocator = By.tagName("button");
 
     public LoginPage(WebDriver driver, Logger log) {
-        this.driver = driver;
-        this.log = log;
+        super(driver, log);
     }
 
     public SecureAreaPage logIn(String username, String password) {
