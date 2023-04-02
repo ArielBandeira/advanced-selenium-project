@@ -6,8 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="14410494-553f-4bbb-a30e-9bd0b9bef812" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/herokuapp/theinternet/pages/WelcomePageObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/herokuapp/theinternet/pages/WelcomePageObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/TestSuites/FullUITestSuite.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/TestSuites/FullUITestSuite.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/herokuapp/theinternet/dropdowntests/DropdownTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/herokuapp/theinternet/dropdowntests/DropdownTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/TestSuites/SeparateTestSuites/DropdownTestSuite.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/TestSuites/SeparateTestSuites/DropdownTestSuite.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,16 +70,6 @@
     </key>
   </component>
   <component name="RunManager" selected="TestNG.C:/Users/ariel/learning_projects/selenium/advanced-selenium-project/src/test/resources/TestSuites/SeparateTestSuites/DropdownTestSuite.xml">
-    <configuration name="C:/Users/ariel/learning_projects/selenium/advanced-selenium-project/src/test/resources/TestSuites/NegativeLoginTestSuite.xml" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="advanced-selenium-project" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/TestSuites/NegativeLoginTestSuite.xml" />
-      <option name="TEST_OBJECT" value="SUITE" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="C:/Users/ariel/learning_projects/selenium/advanced-selenium-project/src/test/resources/TestSuites/SeparateTestSuites/CheckboxesTestSuite.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="advanced-selenium-project" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/TestSuites/SeparateTestSuites/CheckboxesTestSuite.xml" />
@@ -135,13 +125,31 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="DropdownTests.optionOneTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="advanced-selenium-project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.herokuapp.theinternet.dropdowntests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.herokuapp.theinternet.dropdowntests" />
+      <option name="MAIN_CLASS_NAME" value="com.herokuapp.theinternet.dropdowntests.DropdownTests" />
+      <option name="METHOD_NAME" value="optionOneTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.C:/Users/ariel/learning_projects/selenium/advanced-selenium-project/src/test/resources/TestSuites/SeparateTestSuites/DropdownTestSuite.xml" />
+        <item itemvalue="TestNG.DropdownTests.optionOneTest" />
         <item itemvalue="TestNG.CheckboxesTests" />
         <item itemvalue="TestNG.C:/Users/ariel/learning_projects/selenium/advanced-selenium-project/src/test/resources/TestSuites/SeparateTestSuites/CheckboxesTestSuite.xml" />
         <item itemvalue="TestNG.CheckboxesTests.selectingTwoCheckboxesTest" />
-        <item itemvalue="TestNG.C:/Users/ariel/learning_projects/selenium/advanced-selenium-project/src/test/resources/TestSuites/NegativeLoginTestSuite.xml" />
       </list>
     </recent_temporary>
   </component>

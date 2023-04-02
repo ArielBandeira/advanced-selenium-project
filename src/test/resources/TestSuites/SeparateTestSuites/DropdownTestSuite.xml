@@ -2,7 +2,15 @@
 
 <suite name="DropdownTestSuite" verbose="1">
 
-    <test name="DropdownTests">
+    <test name="DropdownTestsOptionOne">
+        <parameter name="optionSelected" value="1"></parameter>
+        <classes>
+            <class name="com.herokuapp.theinternet.dropdowntests.DropdownTests"></class>
+        </classes>
+    </test>
+
+    <test name="DropdownTestsOptionTwo">
+        <parameter name="optionSelected" value="2"></parameter>
         <classes>
             <class name="com.herokuapp.theinternet.dropdowntests.DropdownTests"></class>
         </classes>
