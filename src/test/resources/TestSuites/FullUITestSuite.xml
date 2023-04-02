@@ -32,4 +32,10 @@
         </classes>
     </test>
 
+    <test name="DropdownTests">
+        <classes>
+            <class name="com.herokuapp.theinternet.dropdowntests.DropdownTests"></class>
+        </classes>
+    </test>
+
 </suite>
