@@ -6,20 +6,10 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 
-import java.util.List;
-
 public class DropdownPage extends BasePageObject {
     private By dropdown = By.id("dropdown");
 
-    public DropdownPage(WebDriver driver, Logger log) {
-        super(driver, log);
-    }
-
-    //Open dropdown
-    public void clickDropdownLink() {
-        log.info("Opening dropdown list");
-        click(dropdown);
-    }
+    public DropdownPage(WebDriver driver, Logger log) { super(driver, log); }
 
     //Select option
     public void selectOption(Integer i) {
