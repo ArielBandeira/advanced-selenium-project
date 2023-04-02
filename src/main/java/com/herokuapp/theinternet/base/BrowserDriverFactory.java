@@ -24,7 +24,7 @@ public class BrowserDriverFactory {
             case "Edge" -> driver.set(new EdgeDriver());
             case "chrome" -> driver.set(new ChromeDriver());
             default -> {
-                System.out.println("Do not know how to start: " + browser + ", starting Edge.");
+                log.info("Do not know how to start: " + browser + ", starting Edge.");
                 driver.set(new EdgeDriver());
             }
         }

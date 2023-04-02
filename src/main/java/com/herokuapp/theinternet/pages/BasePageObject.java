@@ -10,6 +10,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
+import java.util.List;
 
 public class BasePageObject {
 
@@ -31,6 +32,11 @@ public class BasePageObject {
         return driver.findElement(locator);
     }
 
+    //Find all elements using locator
+    protected List<WebElement> findAll(By locator) {
+        return driver.findElements(locator);
+    }
+
     //Click on element with given locator when its visible
     protected void click(By locator) {
         waitForVisibilityOf(locator, Duration.ofSeconds(5));
@@ -41,6 +47,11 @@ public class BasePageObject {
     protected void type(String text, By locator) {
         waitForVisibilityOf(locator, Duration.ofSeconds(5));
         find(locator).sendKeys(text);
+    }
+
+    //Read page url
+    public String getCurrentUrl() {
+        return driver.getCurrentUrl();
     }
 
     //Wait for specific ExpectedCondition for the given amount of time in seconds

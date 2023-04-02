@@ -1,0 +1,35 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="FullUITestSuite" verbose="1" parallel="tests" thread-count="4">
+
+    <test name="PositiveLoginTest">
+        <classes>
+            <class name="com.herokuapp.theinternet.loginPageTests.PositiveLoginTests"></class>
+        </classes>
+    </test>
+
+    <test name="NegativeUsernameTest">
+        <parameter name="username" value="incorrectUsername"></parameter>
+        <parameter name="password" value="SuperSecretPassword!"></parameter>
+        <parameter name="errorMessage" value="Your username is invalid!"></parameter>
+        <classes>
+            <class name="com.herokuapp.theinternet.loginPageTests.NegativeLoginTests"></class>
+        </classes>
+    </test>
+
+    <test name="NegativePasswordTest">
+        <parameter name="username" value="tomsmith"></parameter>
+        <parameter name="password" value="incorrectPassword"></parameter>
+        <parameter name="errorMessage" value="Your password is invalid!"></parameter>
+        <classes>
+            <class name="com.herokuapp.theinternet.loginPageTests.NegativeLoginTests"></class>
+        </classes>
+    </test>
+
+    <test name="CheckboxesTests">
+        <classes>
+            <class name="com.herokuapp.theinternet.checkboxespagetests.CheckboxesTests"></class>
+        </classes>
+    </test>
+
+</suite>

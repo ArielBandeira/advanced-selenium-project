@@ -2,14 +2,11 @@ package com.herokuapp.theinternet.loginPageTests;
 
 
 import com.herokuapp.theinternet.base.TestUtilities;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
+import com.herokuapp.theinternet.pages.LoginPage;
+import com.herokuapp.theinternet.pages.SecureAreaPage;
+import com.herokuapp.theinternet.pages.WelcomePageObject;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-
-import java.time.Duration;
 
 public class PositiveLoginTests extends TestUtilities {
 
@@ -18,52 +15,29 @@ public class PositiveLoginTests extends TestUtilities {
         log.info("Stating Login Test...");
 
         //Open main page
-        log.info("Go to main page");
-        String url = "https://the-internet.herokuapp.com";
-        driver.get(url);
+        WelcomePageObject welcomePage = new WelcomePageObject(driver, log);
+        welcomePage.openPage();
 
         //Click on Form Authentication link
-        log.info("Go to Login Page");
-        WebElement formAuthLink = driver.findElement(By.linkText("Form Authentication"));
-        formAuthLink.click();
+        LoginPage loginPage = welcomePage.clickFormAuthenticationLink();
 
-        //Verify if is the right url
-        String actualPage = driver.getCurrentUrl();
-        String expectedLoginPageUrl = "https://the-internet.herokuapp.com/login";
-        Assert.assertTrue(expectedLoginPageUrl.matches(actualPage), "\nLogin page is not the right one!\n" + "Expected url: " + expectedLoginPageUrl + "\nActual page url: " + actualPage);
+        //Execute login
+        log.info("Execute login");
+        SecureAreaPage secureAreaPage = loginPage.logIn("tomsmith", "SuperSecretPassword!");
 
-        //Enter username
-        log.info("Enter username");
-        WebElement username = driver.findElement(By.id("username"));
-        username.sendKeys("tomsmith");
+        //Verifications
+        //New page url is the expected
+        Assert.assertEquals(secureAreaPage.getCurrentUrl(), secureAreaPage.getPageUrl());
 
-        //Enter password
-        log.info("Enter password");
-        WebElement password = driver.findElement(By.id("password"));
-        password.sendKeys("SuperSecretPassword!");
+        //Logout button is visible
+        Assert.assertTrue(secureAreaPage.logoutButtonVisible(), "Logout button is not visible");
 
-        //Login button is visible
-        log.info("Verify if Login button is visible");
-        WebElement loginButton = driver.findElement(By.xpath("//form[@id='login']/button"));
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(3));
-        wait.until(ExpectedConditions.elementToBeClickable(loginButton));
-
-        //Press login button
-        log.info("Press login button");
-        loginButton.click();
-
-        //Verify if is the right url
-        log.info("Verify if is the right url");
-        String expectedAfterLoginPage = "https://the-internet.herokuapp.com/secure";
-        String actualAfterLoginPage = driver.getCurrentUrl();
-        Assert.assertTrue(expectedAfterLoginPage.matches(actualAfterLoginPage), "\nAfter login page is not the right one!\n" + "Expected url: " + expectedLoginPageUrl + "\nActual page url: " + actualPage);
-
-        //Verify if successful message is displayed
-        log.info("Verify if successful message is displayed");
-        WebElement successMessage = driver.findElement(By.xpath("/html//div[@id='flash']"));
-        String expectedMessage = "You logged into a secure area!";
-        String actualMessage = successMessage.getText();
-        Assert.assertTrue(actualMessage.contains(expectedMessage), "\nSuccess message not displayed!\n" + "Expected message: " + expectedMessage + "\nActual message: " + actualMessage);
+        //Successful login message
+        String expectedSuccessMessage = "You logged into a secure area!";
+        String actualSuccessMessage = secureAreaPage.getSuccessMessageText();
+        Assert.assertTrue(actualSuccessMessage.contains(expectedSuccessMessage),
+                "\nActual success message dos not contain expected success message\nExpected message: "
+                        + expectedSuccessMessage + "\nActual message: " + actualSuccessMessage + "\n");
 
     }
 
