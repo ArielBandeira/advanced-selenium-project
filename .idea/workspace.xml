@@ -7,9 +7,7 @@
     <list default="true" id="14410494-553f-4bbb-a30e-9bd0b9bef812" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/herokuapp/theinternet/pages/BasePageObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/herokuapp/theinternet/pages/BasePageObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/herokuapp/theinternet/pages/DropdownPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/herokuapp/theinternet/pages/DropdownPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/herokuapp/theinternet/pages/WelcomePageObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/herokuapp/theinternet/pages/WelcomePageObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/TestSuites/FullUITestSuite.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/TestSuites/FullUITestSuite.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,43 +69,7 @@
       <recent name="C:\Users\ariel\learning_projects\selenium\advanced-selenium-project\src\test\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.C:/Users/ariel/learning_projects/selenium/advanced-selenium-project/src/test/resources/TestSuites/SeparateTestSuites/JavaScriptAlertsTestSuite.xml">
-    <configuration name="AlertsTests.jsAcceptTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="advanced-selenium-project" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.herokuapp.theinternet.alertstests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.herokuapp.theinternet.alertstests" />
-      <option name="MAIN_CLASS_NAME" value="com.herokuapp.theinternet.alertstests.AlertsTests" />
-      <option name="METHOD_NAME" value="jsAcceptTest" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AlertsTests.jsAlertTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="advanced-selenium-project" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.herokuapp.theinternet.alertstests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.herokuapp.theinternet.alertstests" />
-      <option name="MAIN_CLASS_NAME" value="com.herokuapp.theinternet.alertstests.AlertsTests" />
-      <option name="METHOD_NAME" value="jsAlertTest" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="TestNG.C:/Users/ariel/learning_projects/selenium/advanced-selenium-project/src/test/resources/TestSuites/SeparateTestSuites/WindowsTestSuite.xml">
     <configuration name="AlertsTests.jsDismissTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="advanced-selenium-project" />
       <extension name="coverage">
@@ -154,13 +116,41 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="C:/Users/ariel/learning_projects/selenium/advanced-selenium-project/src/test/resources/TestSuites/SeparateTestSuites/WindowsTestSuite.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="advanced-selenium-project" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/TestSuites/SeparateTestSuites/WindowsTestSuite.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WindowsTests.newWindowTests" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="advanced-selenium-project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.herokuapp.theinternet.windowstests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.herokuapp.theinternet.windowstests" />
+      <option name="MAIN_CLASS_NAME" value="com.herokuapp.theinternet.windowstests.WindowsTests" />
+      <option name="METHOD_NAME" value="newWindowTests" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.C:/Users/ariel/learning_projects/selenium/advanced-selenium-project/src/test/resources/TestSuites/SeparateTestSuites/WindowsTestSuite.xml" />
+        <item itemvalue="TestNG.WindowsTests.newWindowTests" />
         <item itemvalue="TestNG.C:/Users/ariel/learning_projects/selenium/advanced-selenium-project/src/test/resources/TestSuites/SeparateTestSuites/JavaScriptAlertsTestSuite.xml" />
         <item itemvalue="TestNG.AlertsTests.jsPromptTest" />
         <item itemvalue="TestNG.AlertsTests.jsDismissTest" />
-        <item itemvalue="TestNG.AlertsTests.jsAcceptTest" />
-        <item itemvalue="TestNG.AlertsTests.jsAlertTest" />
       </list>
     </recent_temporary>
   </component>
