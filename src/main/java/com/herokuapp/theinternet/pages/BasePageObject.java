@@ -109,4 +109,9 @@ public class BasePageObject {
 
     }
 
+    //Switching to iframe using its locator
+    protected void switchToFrame(By frameLocator) {
+        driver.switchTo().frame(find(frameLocator));
+    }
+
 }
