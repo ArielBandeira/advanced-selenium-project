@@ -61,7 +61,7 @@ public class WelcomePageObject extends BasePageObject {
     }
 
     //Open WYSIWYG Editor page
-    public EditorPage cliclickWYSIWYGEditorLink() {
+    public EditorPage clickWYSIWYGEditorLink() {
         log.info("Clicking on WYSIWYG Editor link on Welcome Page");
         click(WYSIWYGEditorLinkLocator);
         return new EditorPage(driver, log);

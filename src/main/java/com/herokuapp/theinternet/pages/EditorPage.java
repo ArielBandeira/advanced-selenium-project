@@ -6,7 +6,7 @@ import org.openqa.selenium.WebDriver;
 
 public class EditorPage extends BasePageObject{
 
-    private By editorTextLocator = By.xpath("//body[@id='tinymce']");
+    private By editorTextLocator = By.id("tinymce");
 
     public EditorPage(WebDriver driver, Logger log) { super(driver, log); }
 

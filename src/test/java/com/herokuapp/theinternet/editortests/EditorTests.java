@@ -17,7 +17,7 @@ public class EditorTests extends TestUtilities {
         welcomePage.openPage();
 
         //Click on WYSIWYG Editor link
-        EditorPage editorPage = welcomePage.cliclickWYSIWYGEditorLink();
+        EditorPage editorPage = welcomePage.clickWYSIWYGEditorLink();
 
         //Get default editor text
         String editorText = editorPage.getEditorText();
