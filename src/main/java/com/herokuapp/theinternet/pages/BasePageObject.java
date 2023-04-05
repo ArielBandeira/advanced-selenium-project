@@ -2,6 +2,7 @@ package com.herokuapp.theinternet.pages;
 
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.*;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -112,6 +113,17 @@ public class BasePageObject {
     //Switching to iframe using its locator
     protected void switchToFrame(By frameLocator) {
         driver.switchTo().frame(find(frameLocator));
+    }
+
+    //Press key on locator
+    protected void pressKey(By locator, Keys key) {
+        find(locator).sendKeys(key);
+    }
+
+    public void pressKeyWithActions(Keys key) {
+        log.info("Pressing " + key.name() + " using Actions class");
+        Actions action = new Actions(driver);
+        action.sendKeys(key).perform();
     }
 
 }

@@ -13,6 +13,7 @@ public class WelcomePageObject extends BasePageObject {
     private By javaScriptAlertsLinkLocator = By.linkText("JavaScript Alerts");
     private By multipleWindowsLinkLocator = By.linkText("Multiple Windows");
     private By WYSIWYGEditorLinkLocator = By.linkText("WYSIWYG Editor");
+    private By keyPressesLinkLocator = By.linkText("Key Presses");
 
     public WelcomePageObject(WebDriver driver, Logger log) {
         super(driver, log);
@@ -65,6 +66,13 @@ public class WelcomePageObject extends BasePageObject {
         log.info("Clicking on WYSIWYG Editor link on Welcome Page");
         click(WYSIWYGEditorLinkLocator);
         return new EditorPage(driver, log);
+    }
+
+    //Open Key Presses page
+    public KeyPressesPage clickKeyPressesLink() {
+        log.info("Clicking on Key Presses link on Welcome Page");
+        click(keyPressesLinkLocator);
+        return new KeyPressesPage(driver, log);
     }
 
 }
