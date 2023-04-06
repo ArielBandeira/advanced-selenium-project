@@ -14,14 +14,16 @@ public class FileUploaderPage extends BasePageObject{
 
     //Select file
     public void selectFile(String filename) {
-        log.info("Select file");
-        driver.
+        log.info("Select file: " + filename + "from files folder");
+        String filePath = System.getProperty("user.dir" + "//src//main//resources//files//" + filename);
+        type(filePath, chooseFileButtonLocator);
+        log.info("File selected");
     }
 
     //Push upload button
     public void pushUploadButton() {
         log.info("Click on upload button");
-        find(uploadButtonLocator).click();
+        click(uploadButtonLocator);
     }
 
     //Get uploaded files name
