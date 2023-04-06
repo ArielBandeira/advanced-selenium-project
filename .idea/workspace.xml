@@ -7,6 +7,7 @@
     <list default="true" id="14410494-553f-4bbb-a30e-9bd0b9bef812" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/herokuapp/theinternet/pages/FileUploaderPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/herokuapp/theinternet/pages/FileUploaderPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/herokuapp/theinternet/uploadtests/UploadTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/herokuapp/theinternet/uploadtests/UploadTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +73,7 @@
       <recent name="C:\Users\ariel\learning_projects\selenium\advanced-selenium-project\src\test\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.UploadTests.imageUploadTest">
+  <component name="RunManager" selected="TestNG.C:/Users/ariel/learning_projects/selenium/advanced-selenium-project/src/test/resources/TestSuites/SeparateTestSuites/UploadTestSuite.xml">
     <configuration name="C:/Users/ariel/learning_projects/selenium/advanced-selenium-project/src/test/resources/TestSuites/SeparateTestSuites/EditorTestSuite.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="advanced-selenium-project" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/TestSuites/SeparateTestSuites/EditorTestSuite.xml" />
@@ -93,9 +94,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="C:/Users/ariel/learning_projects/selenium/advanced-selenium-project/src/test/resources/TestSuites/SeparateTestSuites/WindowsTestSuite.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="C:/Users/ariel/learning_projects/selenium/advanced-selenium-project/src/test/resources/TestSuites/SeparateTestSuites/UploadTestSuite.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="advanced-selenium-project" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/TestSuites/SeparateTestSuites/WindowsTestSuite.xml" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/TestSuites/SeparateTestSuites/UploadTestSuite.xml" />
       <option name="TEST_OBJECT" value="SUITE" />
       <properties />
       <listeners />
@@ -141,11 +142,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.C:/Users/ariel/learning_projects/selenium/advanced-selenium-project/src/test/resources/TestSuites/SeparateTestSuites/UploadTestSuite.xml" />
         <item itemvalue="TestNG.UploadTests.imageUploadTest" />
         <item itemvalue="TestNG.C:/Users/ariel/learning_projects/selenium/advanced-selenium-project/src/test/resources/TestSuites/SeparateTestSuites/KeyPressesTestSuite.xml" />
         <item itemvalue="TestNG.KeyPressesTests.pressKeyWithActionTest" />
         <item itemvalue="TestNG.C:/Users/ariel/learning_projects/selenium/advanced-selenium-project/src/test/resources/TestSuites/SeparateTestSuites/EditorTestSuite.xml" />
-        <item itemvalue="TestNG.C:/Users/ariel/learning_projects/selenium/advanced-selenium-project/src/test/resources/TestSuites/SeparateTestSuites/WindowsTestSuite.xml" />
       </list>
     </recent_temporary>
   </component>

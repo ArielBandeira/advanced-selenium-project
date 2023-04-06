@@ -14,8 +14,8 @@ public class FileUploaderPage extends BasePageObject{
 
     //Select file
     public void selectFile(String filename) {
-        log.info("Select file: " + filename + "from files folder");
-        String filePath = System.getProperty("user.dir" + "//src//main//resources//files//" + filename);
+        log.info("Select file: " + filename + " from files folder");
+        String filePath = System.getProperty("user.dir") + "//src//main//resources//files//" + filename;
         type(filePath, chooseFileButtonLocator);
         log.info("File selected");
     }
@@ -28,7 +28,9 @@ public class FileUploaderPage extends BasePageObject{
 
     //Get uploaded files name
     public String getUploadedFilesName() {
-        log.info("Get uploaded files name");
+        String names = find(uploadedFilesLocator).getText();
+        log.info("Uploaded files names: " + names);
+        return names;
     }
 
 }

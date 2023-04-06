@@ -17,12 +17,12 @@ public class UploadTests extends TestUtilities {
         FileUploaderPage uploaderPage = welcomePage.clickFileUploadLink();
 
         //Select file
-        String fileName = "pedro-pascal-dressed-as-a-nice-old-lady.jpg";
+        String fileName = "pedro_pascal_smiling.jpg";
         uploaderPage.selectFile(fileName);
 
         //Push upload button
         uploaderPage.pushUploadButton();
-        sleep(1000);
+
 
         //Get uploaded files name
         String fileNames = uploaderPage.getUploadedFilesName();
@@ -30,6 +30,7 @@ public class UploadTests extends TestUtilities {
         //Verify selected file uploaded
         Assert.assertTrue(fileName.contains(fileNames),
                 "\nSent file (" + fileName + ") is not the uploaded (" + fileNames + ")\n");
+
     }
 
 }
