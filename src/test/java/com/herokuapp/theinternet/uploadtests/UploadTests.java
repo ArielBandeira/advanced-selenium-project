@@ -2,7 +2,7 @@ package com.herokuapp.theinternet.uploadtests;
 
 import com.herokuapp.theinternet.base.TestUtilities;
 import com.herokuapp.theinternet.pages.FileUploaderPage;
-import com.herokuapp.theinternet.pages.WelcomePageObject;
+import com.herokuapp.theinternet.pages.WelcomePage;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -12,7 +12,7 @@ public class UploadTests extends TestUtilities {
     public void imageUploadTest() {
         log.info("Starting Key imageUploadTest");
         //Open File Upload page
-        WelcomePageObject welcomePage = new WelcomePageObject(driver, log);
+        WelcomePage welcomePage = new WelcomePage(driver, log);
         welcomePage.openPage();
         FileUploaderPage uploaderPage = welcomePage.clickFileUploadLink();
 
