@@ -6,8 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="14410494-553f-4bbb-a30e-9bd0b9bef812" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/herokuapp/theinternet/base/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/herokuapp/theinternet/base/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/herokuapp/theinternet/base/BrowserDriverFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/herokuapp/theinternet/base/BrowserDriverFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/herokuapp/theinternet/pages/BasePageObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/herokuapp/theinternet/pages/BasePageObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/herokuapp/theinternet/pages/WelcomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/herokuapp/theinternet/pages/WelcomePage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,10 +74,20 @@
       <recent name="C:\Users\ariel\learning_projects\selenium\advanced-selenium-project\src\test\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.C:/Users/ariel/learning_projects/selenium/advanced-selenium-project/src/test/resources/TestSuites/SeparateTestSuites/EditorTestSuite.xml">
+  <component name="RunManager" selected="TestNG.C:/Users/ariel/learning_projects/selenium/advanced-selenium-project/src/test/resources/TestSuites/SeparateTestSuites/DragAndDropTestSuite.xml">
     <configuration name="C:/Users/ariel/learning_projects/selenium/advanced-selenium-project/src/test/resources/TestSuites/SeparateTestSuites/CheckboxesTestSuite.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="advanced-selenium-project" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/TestSuites/SeparateTestSuites/CheckboxesTestSuite.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="C:/Users/ariel/learning_projects/selenium/advanced-selenium-project/src/test/resources/TestSuites/SeparateTestSuites/DragAndDropTestSuite.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="advanced-selenium-project" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/TestSuites/SeparateTestSuites/DragAndDropTestSuite.xml" />
       <option name="TEST_OBJECT" value="SUITE" />
       <properties />
       <listeners />
@@ -115,23 +125,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="C:/Users/ariel/learning_projects/selenium/advanced-selenium-project/src/test/resources/TestSuites/SeparateTestSuites/KeyPressesTestSuite.xml" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="advanced-selenium-project" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/TestSuites/SeparateTestSuites/KeyPressesTestSuite.xml" />
-      <option name="TEST_OBJECT" value="SUITE" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.C:/Users/ariel/learning_projects/selenium/advanced-selenium-project/src/test/resources/TestSuites/SeparateTestSuites/DragAndDropTestSuite.xml" />
         <item itemvalue="TestNG.C:/Users/ariel/learning_projects/selenium/advanced-selenium-project/src/test/resources/TestSuites/SeparateTestSuites/EditorTestSuite.xml" />
         <item itemvalue="TestNG.C:/Users/ariel/learning_projects/selenium/advanced-selenium-project/src/test/resources/TestSuites/SeparateTestSuites/CheckboxesTestSuite.xml" />
         <item itemvalue="TestNG.C:/Users/ariel/learning_projects/selenium/advanced-selenium-project/src/test/resources/TestSuites/SeparateTestSuites/DropdownTestSuite.xml" />
         <item itemvalue="TestNG.C:/Users/ariel/learning_projects/selenium/advanced-selenium-project/src/test/resources/TestSuites/SeparateTestSuites/JavaScriptAlertsTestSuite.xml" />
-        <item itemvalue="TestNG.C:/Users/ariel/learning_projects/selenium/advanced-selenium-project/src/test/resources/TestSuites/SeparateTestSuites/KeyPressesTestSuite.xml" />
       </list>
     </recent_temporary>
   </component>
