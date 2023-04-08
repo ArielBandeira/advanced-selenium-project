@@ -4,6 +4,8 @@ import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.edge.EdgeOptions;
+import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class BrowserDriverFactory {
 
@@ -21,11 +23,12 @@ public class BrowserDriverFactory {
         log.info("Create browser: " + browser);
 
         switch (browser) {
+            case "Firefox" -> driver.set(new FirefoxDriver());
             case "Edge" -> driver.set(new EdgeDriver());
-            case "chrome" -> driver.set(new ChromeDriver());
+            case "Chrome" -> driver.set(new ChromeDriver());
             default -> {
-                log.info("Do not know how to start: " + browser + ", starting Edge.");
-                driver.set(new EdgeDriver());
+                log.info("Do not know how to start: " + browser + ", starting Firefox.");
+                driver.set(new FirefoxDriver());
             }
         }
 

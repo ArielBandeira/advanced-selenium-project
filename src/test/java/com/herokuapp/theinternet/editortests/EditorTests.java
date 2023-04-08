@@ -16,6 +16,11 @@ public class EditorTests extends TestUtilities {
         WelcomePage welcomePage = new WelcomePage(driver, log);
         welcomePage.openPage();
 
+        //Scroll to bottom
+        sleep(2000);
+        welcomePage.scrollToBottom();
+        sleep(2000);
+
         //Click on WYSIWYG Editor link
         EditorPage editorPage = welcomePage.clickWYSIWYGEditorLink();
 
