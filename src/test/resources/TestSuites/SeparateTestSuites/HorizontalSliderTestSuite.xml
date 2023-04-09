@@ -1,0 +1,26 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="HorizontalSliderTestSuite" verbose="3">
+
+    <test name="HorizontalSliderTest1">
+        <parameter name="rangeValue" value="1.5"></parameter>
+        <classes>
+            <class name="com.herokuapp.theinternet.horizontalslidertests.HorizontalSliderTests" />
+        </classes>
+    </test>
+
+    <test name="HorizontalSliderTest2">
+        <parameter name="rangeValue" value="2.5"></parameter>
+        <classes>
+            <class name="com.herokuapp.theinternet.horizontalslidertests.HorizontalSliderTests" />
+        </classes>
+    </test>
+
+    <test name="HorizontalSliderTest3">
+        <parameter name="rangeValue" value="5"></parameter>
+        <classes>
+            <class name="com.herokuapp.theinternet.horizontalslidertests.HorizontalSliderTests" />
+        </classes>
+    </test>
+
+</suite>
