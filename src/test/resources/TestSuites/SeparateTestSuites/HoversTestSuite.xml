@@ -1,0 +1,26 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="HoversTestSuite" verbose="3">
+
+    <test name="HoversTestsProfile1">
+        <parameter name="profile" value="1"></parameter>
+        <classes>
+            <class name="com.herokuapp.theinternet.hoverstests.HoversTests" />
+        </classes>
+    </test>
+
+    <test name="HoversTestsProfile2">
+        <parameter name="profile" value="2"></parameter>
+        <classes>
+            <class name="com.herokuapp.theinternet.hoverstests.HoversTests" />
+        </classes>
+    </test>
+
+    <test name="HoversTestsProfile3">
+        <parameter name="profile" value="3"></parameter>
+        <classes>
+            <class name="com.herokuapp.theinternet.hoverstests.HoversTests" />
+        </classes>
+    </test>
+
+</suite>

@@ -74,7 +74,7 @@
       <recent name="C:\Users\ariel\learning_projects\selenium\advanced-selenium-project\src\test\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.C:/Users/ariel/learning_projects/selenium/advanced-selenium-project/src/test/resources/TestSuites/SeparateTestSuites/DragAndDropTestSuite.xml">
+  <component name="RunManager" selected="TestNG.C:/Users/ariel/learning_projects/selenium/advanced-selenium-project/src/test/resources/TestSuites/SeparateTestSuites/HoversTestSuite.xml">
     <configuration name="C:/Users/ariel/learning_projects/selenium/advanced-selenium-project/src/test/resources/TestSuites/SeparateTestSuites/CheckboxesTestSuite.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="advanced-selenium-project" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/TestSuites/SeparateTestSuites/CheckboxesTestSuite.xml" />
@@ -95,16 +95,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="C:/Users/ariel/learning_projects/selenium/advanced-selenium-project/src/test/resources/TestSuites/SeparateTestSuites/DropdownTestSuite.xml" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="advanced-selenium-project" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/TestSuites/SeparateTestSuites/DropdownTestSuite.xml" />
-      <option name="TEST_OBJECT" value="SUITE" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="C:/Users/ariel/learning_projects/selenium/advanced-selenium-project/src/test/resources/TestSuites/SeparateTestSuites/EditorTestSuite.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="advanced-selenium-project" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/TestSuites/SeparateTestSuites/EditorTestSuite.xml" />
@@ -115,10 +105,28 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="C:/Users/ariel/learning_projects/selenium/advanced-selenium-project/src/test/resources/TestSuites/SeparateTestSuites/JavaScriptAlertsTestSuite.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="C:/Users/ariel/learning_projects/selenium/advanced-selenium-project/src/test/resources/TestSuites/SeparateTestSuites/HoversTestSuite.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="advanced-selenium-project" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/TestSuites/SeparateTestSuites/JavaScriptAlertsTestSuite.xml" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/TestSuites/SeparateTestSuites/HoversTestSuite.xml" />
       <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HoversTests.userOneProfileTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="advanced-selenium-project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.herokuapp.theinternet.hoverstests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.herokuapp.theinternet.hoverstests" />
+      <option name="MAIN_CLASS_NAME" value="com.herokuapp.theinternet.hoverstests.HoversTests" />
+      <option name="METHOD_NAME" value="userOneProfileTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -127,11 +135,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.C:/Users/ariel/learning_projects/selenium/advanced-selenium-project/src/test/resources/TestSuites/SeparateTestSuites/HoversTestSuite.xml" />
+        <item itemvalue="TestNG.HoversTests.userOneProfileTest" />
         <item itemvalue="TestNG.C:/Users/ariel/learning_projects/selenium/advanced-selenium-project/src/test/resources/TestSuites/SeparateTestSuites/DragAndDropTestSuite.xml" />
         <item itemvalue="TestNG.C:/Users/ariel/learning_projects/selenium/advanced-selenium-project/src/test/resources/TestSuites/SeparateTestSuites/EditorTestSuite.xml" />
         <item itemvalue="TestNG.C:/Users/ariel/learning_projects/selenium/advanced-selenium-project/src/test/resources/TestSuites/SeparateTestSuites/CheckboxesTestSuite.xml" />
-        <item itemvalue="TestNG.C:/Users/ariel/learning_projects/selenium/advanced-selenium-project/src/test/resources/TestSuites/SeparateTestSuites/DropdownTestSuite.xml" />
-        <item itemvalue="TestNG.C:/Users/ariel/learning_projects/selenium/advanced-selenium-project/src/test/resources/TestSuites/SeparateTestSuites/JavaScriptAlertsTestSuite.xml" />
       </list>
     </recent_temporary>
   </component>
@@ -145,5 +153,13 @@
       <updated>1680047171278</updated>
     </task>
     <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="com.herokuapp.theinternet.pages.HoversPage" memberName="profileLocator" />
+        <PinnedItemInfo parentTag="org.openqa.selenium.By$ByXPath" memberName="params" />
+      </pinned-members>
+    </pin-to-top-manager>
   </component>
 </project>

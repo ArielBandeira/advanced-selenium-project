@@ -158,4 +158,10 @@ public class BasePageObject {
                 find(from), find(to));
     }
 
+    //Hover over element
+    protected void hoverOverElement(WebElement element) {
+        Actions action = new Actions(driver);
+        action.moveToElement(element).build().perform();
+    }
+
 }
