@@ -5,10 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="14410494-553f-4bbb-a30e-9bd0b9bef812" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/herokuapp/theinternet/base/TestUtilities.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/herokuapp/theinternet/base/TestUtilities.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/herokuapp/theinternet/pages/FileUploaderPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/herokuapp/theinternet/pages/FileUploaderPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/herokuapp/theinternet/uploadtests/UploadTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/herokuapp/theinternet/uploadtests/UploadTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,11 +66,11 @@
       <recent name="C:\Users\ariel\learning_projects\selenium\advanced-selenium-project\src\main\resources\files" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ariel\learning_projects\selenium\advanced-selenium-project\src\test\resources\dataproviders\NegativeLoginTests" />
       <recent name="C:\Users\ariel\learning_projects\selenium\advanced-selenium-project\src\test\resources\dataproviders" />
       <recent name="C:\Users\ariel\learning_projects\selenium\advanced-selenium-project\src\main\resources" />
       <recent name="C:\Users\ariel\learning_projects\selenium\advanced-selenium-project\src\test\resources\TestSuites\SeparateTestSuites" />
       <recent name="C:\Users\ariel\learning_projects\selenium\advanced-selenium-project\src\test\resources\TestSuites" />
-      <recent name="C:\Users\ariel\learning_projects\selenium\advanced-selenium-project\src\test\resources" />
     </key>
   </component>
   <component name="RunManager" selected="TestNG.C:/Users/ariel/learning_projects/selenium/advanced-selenium-project/src/test/resources/TestSuites/SeparateTestSuites/UploadTestSuite.xml">
