@@ -12,8 +12,8 @@ public class NegativeLoginTests extends TestUtilities {
 
     @Parameters({ "username", "password", "errorMessage" })
     @Test
-    public void negativeTest(String username, String password, String errorMessage) {
-        log.info("Stating Negative Login Test...");
+    public void negativeLoginTest(String username, String password, String errorMessage) {
+        log.info("Stating negativeLoginTest");
 
         //Open main page
         WelcomePage welcomePage = new WelcomePage(driver, log);

@@ -15,7 +15,7 @@ public class FileUploaderPage extends BasePageObject{
     //Select file
     public void selectFile(String filename) {
         log.info("Select file: " + filename + " from files folder");
-        String filePath = System.getProperty("user.dir") + "//src//main//resources//files//" + filename;
+        String filePath = System.getProperty("user.dir") + "\\src\\main\\resources\\files\\" + filename;
         type(filePath, chooseFileButtonLocator);
         log.info("File selected");
     }

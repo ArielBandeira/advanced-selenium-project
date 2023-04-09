@@ -11,8 +11,8 @@ import org.testng.annotations.Test;
 public class PositiveLoginTests extends TestUtilities {
 
     @Test
-    public void loginTest() {
-        log.info("Stating Login Test...");
+    public void positiveLoginTest() {
+        log.info("Stating positiveLoginTest");
 
         //Open main page
         WelcomePage welcomePage = new WelcomePage(driver, log);

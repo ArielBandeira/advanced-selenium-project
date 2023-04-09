@@ -8,16 +8,15 @@ import org.testng.annotations.Test;
 
 public class UploadTests extends TestUtilities {
 
-    @Test
-    public void imageUploadTest() {
-        log.info("Starting Key imageUploadTest");
+    @Test(dataProvider = "files")
+    public void fileUploadTest(int no, String fileName) {
+        log.info("Starting Key fileUploadTest #" + no + " for " + fileName);
         //Open File Upload page
         WelcomePage welcomePage = new WelcomePage(driver, log);
         welcomePage.openPage();
         FileUploaderPage uploaderPage = welcomePage.clickFileUploadLink();
 
         //Select file
-        String fileName = "pedro_pascal_smiling.jpg";
         uploaderPage.selectFile(fileName);
 
         //Push upload button
