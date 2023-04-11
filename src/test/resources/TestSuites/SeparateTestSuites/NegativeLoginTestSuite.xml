@@ -2,7 +2,7 @@
 
 <suite name="NegativeLoginTestSuite" verbose="1" parallel="tests" thread-count="4">
 
-    <test name="NegativeUsernameTest">
+<!--    <test name="NegativeUsernameTest">
         <parameter name="username" value="incorrectUsername"></parameter>
         <parameter name="password" value="SuperSecretPassword!"></parameter>
         <parameter name="errorMessage" value="Your username is invalid!"></parameter>
@@ -15,6 +15,12 @@
         <parameter name="username" value="tomsmith"></parameter>
         <parameter name="password" value="incorrectPassword"></parameter>
         <parameter name="errorMessage" value="Your password is invalid!"></parameter>
+        <classes>
+            <class name="com.herokuapp.theinternet.loginPageTests.NegativeLoginTests"></class>
+        </classes>
+    </test>-->
+
+    <test name="NegativeLoginTest">
         <classes>
             <class name="com.herokuapp.theinternet.loginPageTests.NegativeLoginTests"></class>
         </classes>

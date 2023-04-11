@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="14410494-553f-4bbb-a30e-9bd0b9bef812" name="Changes" comment="" />
+    <list default="true" id="14410494-553f-4bbb-a30e-9bd0b9bef812" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/herokuapp/theinternet/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/herokuapp/theinternet/pages/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/herokuapp/theinternet/loginPageTests/NegativeLoginTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/herokuapp/theinternet/loginPageTests/NegativeLoginTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/TestSuites/SeparateTestSuites/NegativeLoginTestSuite.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/TestSuites/SeparateTestSuites/NegativeLoginTestSuite.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -71,17 +76,7 @@
       <recent name="C:\Users\ariel\learning_projects\selenium\advanced-selenium-project\src\test\resources\TestSuites" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.C:/Users/ariel/learning_projects/selenium/advanced-selenium-project/src/test/resources/TestSuites/SeparateTestSuites/UploadTestSuite.xml">
-    <configuration name="C:/Users/ariel/learning_projects/selenium/advanced-selenium-project/src/test/resources/TestSuites/SeparateTestSuites/DragAndDropTestSuite.xml" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="advanced-selenium-project" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/TestSuites/SeparateTestSuites/DragAndDropTestSuite.xml" />
-      <option name="TEST_OBJECT" value="SUITE" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="TestNG.C:/Users/ariel/learning_projects/selenium/advanced-selenium-project/src/test/resources/TestSuites/SeparateTestSuites/NegativeLoginTestSuite.xml">
     <configuration name="C:/Users/ariel/learning_projects/selenium/advanced-selenium-project/src/test/resources/TestSuites/SeparateTestSuites/HorizontalSliderTestSuite.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="advanced-selenium-project" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/TestSuites/SeparateTestSuites/HorizontalSliderTestSuite.xml" />
@@ -95,6 +90,16 @@
     <configuration name="C:/Users/ariel/learning_projects/selenium/advanced-selenium-project/src/test/resources/TestSuites/SeparateTestSuites/HoversTestSuite.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="advanced-selenium-project" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/TestSuites/SeparateTestSuites/HoversTestSuite.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="C:/Users/ariel/learning_projects/selenium/advanced-selenium-project/src/test/resources/TestSuites/SeparateTestSuites/NegativeLoginTestSuite.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="advanced-selenium-project" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/TestSuites/SeparateTestSuites/NegativeLoginTestSuite.xml" />
       <option name="TEST_OBJECT" value="SUITE" />
       <properties />
       <listeners />
@@ -132,11 +137,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.C:/Users/ariel/learning_projects/selenium/advanced-selenium-project/src/test/resources/TestSuites/SeparateTestSuites/NegativeLoginTestSuite.xml" />
         <item itemvalue="TestNG.C:/Users/ariel/learning_projects/selenium/advanced-selenium-project/src/test/resources/TestSuites/SeparateTestSuites/UploadTestSuite.xml" />
         <item itemvalue="TestNG.C:/Users/ariel/learning_projects/selenium/advanced-selenium-project/src/test/resources/TestSuites/SeparateTestSuites/HorizontalSliderTestSuite.xml" />
         <item itemvalue="TestNG.C:/Users/ariel/learning_projects/selenium/advanced-selenium-project/src/test/resources/TestSuites/SeparateTestSuites/HoversTestSuite.xml" />
         <item itemvalue="TestNG.HoversTests.userOneProfileTest" />
-        <item itemvalue="TestNG.C:/Users/ariel/learning_projects/selenium/advanced-selenium-project/src/test/resources/TestSuites/SeparateTestSuites/DragAndDropTestSuite.xml" />
       </list>
     </recent_temporary>
   </component>

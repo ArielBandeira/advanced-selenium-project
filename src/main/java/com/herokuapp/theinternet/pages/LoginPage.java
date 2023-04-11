@@ -41,8 +41,9 @@ public class LoginPage extends BasePageObject {
     }
 
     public String getFailLoginMessageText() {
-        log.info("Return error login message");
-        return find(failLoginMessage).getText();
+        String errorMessage = find(failLoginMessage).getText();
+        log.info("Return error login message: " + errorMessage);
+        return errorMessage;
     }
 
 }
