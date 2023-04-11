@@ -3,16 +3,16 @@
 <suite name="DropdownTestSuite" verbose="1">
 
     <test name="DropdownTestsOptionOne">
-        <parameter name="optionSelected" value="1"></parameter>
+        <parameter name="optionSelected" value="1" />
         <classes>
-            <class name="com.herokuapp.theinternet.dropdowntests.DropdownTests"></class>
+            <class name="com.herokuapp.theinternet.dropdowntests.DropdownTests" />
         </classes>
     </test>
 
     <test name="DropdownTestsOptionTwo">
-        <parameter name="optionSelected" value="2"></parameter>
+        <parameter name="optionSelected" value="2" />
         <classes>
-            <class name="com.herokuapp.theinternet.dropdowntests.DropdownTests"></class>
+            <class name="com.herokuapp.theinternet.dropdowntests.DropdownTests" />
         </classes>
     </test>
 

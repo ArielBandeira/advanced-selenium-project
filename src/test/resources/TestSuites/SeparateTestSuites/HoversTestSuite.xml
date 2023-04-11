@@ -3,21 +3,21 @@
 <suite name="HoversTestSuite" verbose="3">
 
     <test name="HoversTestsProfile1">
-        <parameter name="profile" value="1"></parameter>
+        <parameter name="profile" value="1" />
         <classes>
             <class name="com.herokuapp.theinternet.hoverstests.HoversTests" />
         </classes>
     </test>
 
     <test name="HoversTestsProfile2">
-        <parameter name="profile" value="2"></parameter>
+        <parameter name="profile" value="2" />
         <classes>
             <class name="com.herokuapp.theinternet.hoverstests.HoversTests" />
         </classes>
     </test>
 
     <test name="HoversTestsProfile3">
-        <parameter name="profile" value="3"></parameter>
+        <parameter name="profile" value="3" />
         <classes>
             <class name="com.herokuapp.theinternet.hoverstests.HoversTests" />
         </classes>

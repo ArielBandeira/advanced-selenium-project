@@ -4,7 +4,7 @@
 
     <test name="DragAndDropTests">
         <classes>
-            <class name="com.herokuapp.theinternet.draganddroptests.DragAndDropTests"></class>
+            <class name="com.herokuapp.theinternet.draganddroptests.DragAndDropTests" />
         </classes>
     </test>
 

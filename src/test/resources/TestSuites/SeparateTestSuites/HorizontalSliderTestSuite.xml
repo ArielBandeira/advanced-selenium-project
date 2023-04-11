@@ -3,21 +3,21 @@
 <suite name="HorizontalSliderTestSuite" verbose="3">
 
     <test name="HorizontalSliderTest1">
-        <parameter name="rangeValue" value="1.5"></parameter>
+        <parameter name="rangeValue" value="1.5" />
         <classes>
             <class name="com.herokuapp.theinternet.horizontalslidertests.HorizontalSliderTests" />
         </classes>
     </test>
 
     <test name="HorizontalSliderTest2">
-        <parameter name="rangeValue" value="2.5"></parameter>
+        <parameter name="rangeValue" value="2.5" />
         <classes>
             <class name="com.herokuapp.theinternet.horizontalslidertests.HorizontalSliderTests" />
         </classes>
     </test>
 
     <test name="HorizontalSliderTest3">
-        <parameter name="rangeValue" value="5"></parameter>
+        <parameter name="rangeValue" value="5" />
         <classes>
             <class name="com.herokuapp.theinternet.horizontalslidertests.HorizontalSliderTests" />
         </classes>

@@ -6,8 +6,8 @@
         <classes>
             <class name="com.herokuapp.theinternet.keypressestests.KeyPressesTests">
                 <methods>
-                    <include name="pressKeyWithActionTest"></include>
-                    <include name="pressKeyTest"></include>
+                    <include name="pressKeyWithActionTest" />
+                    <include name="pressKeyTest" />
                 </methods>
             </class>
         </classes>

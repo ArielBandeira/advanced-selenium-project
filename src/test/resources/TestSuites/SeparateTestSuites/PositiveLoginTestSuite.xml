@@ -2,10 +2,6 @@
 
 <suite name="PositiveLoginTestSuite" verbose="1">
 
-    <listeners>
-        <listener class-name="com.herokuapp.theinternet.base.TestListener" />
-    </listeners>
-
     <test name="PositiveLoginTest">
         <classes>
             <class name="com.herokuapp.theinternet.loginPageTests.PositiveLoginTests" />
