@@ -5,6 +5,7 @@ import com.herokuapp.theinternet.pages.JavaScriptAlertsPage;
 import com.herokuapp.theinternet.pages.WelcomePage;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 
 public class AlertsTests extends TestUtilities {
 
@@ -13,6 +14,9 @@ public class AlertsTests extends TestUtilities {
     @Test
     public void jsAlertTest() {
         log.info("Starting jsAlertTest");
+
+        //Adding Soft Assert
+        SoftAssert softAssert = new SoftAssert();
 
         //Open main page
         WelcomePage welcomePage = new WelcomePage(driver, log);
@@ -35,19 +39,24 @@ public class AlertsTests extends TestUtilities {
 
         //Verify if alert text is the expected
         String expectedAlertMessage = "I am a JS Alert";
-        Assert.assertTrue(alertMessage.contains(expectedAlertMessage), "\nAlert message is not the right one.\n" +
-                "Expected: " + expectedAlertMessage + "\nActual Message: " + alertMessage);
+        softAssert.assertTrue(alertMessage.equals(expectedAlertMessage), "\nAlert message is not the right one.\n" +
+                "Expected: " + expectedAlertMessage + "\nActual Message: " + alertMessage + "\n");
 
         //Verify if the result text is the expected
         String expectedResultText = "You successfully clicked an alert";
-        Assert.assertTrue(resultText.contains(expectedResultText), "\nExpected result is not correct\n" +
-                "Expected: " + expectedResultText + "\nActual: " + resultText);
+        softAssert.assertTrue(resultText.equals(expectedResultText), "\nExpected result is not correct\n" +
+                "Expected: " + expectedResultText + "\nActual: " + resultText + "\n");
+
+        softAssert.assertAll();
     }
 
     //JS Accept test
     @Test
     public void jsAcceptTest() {
         log.info("Starting jsAcceptTest");
+
+        //Adding Soft Assert
+        SoftAssert softAssert = new SoftAssert();
 
         //Open main page
         WelcomePage welcomePage = new WelcomePage(driver, log);
@@ -70,13 +79,15 @@ public class AlertsTests extends TestUtilities {
 
         //Verify if alert text is the expected
         String expectedAlertText = "I am a JS Confirm";
-        Assert.assertTrue(alertText.contains(expectedAlertText), "\nAlert text text is not the right one\n" +
-                "Expected: " + expectedAlertText + "Actual: " + alertText);
+        softAssert.assertTrue(alertText.equals(expectedAlertText), "\nAlert text text is not the right one\n" +
+                "Expected: " + expectedAlertText + "\nActual: " + alertText + "\n");
 
         //Verify if the result text is the expected
         String expectedResultText = "You clicked: Ok";
-        Assert.assertTrue(resultText.contains(expectedResultText), "\nResult text is not the right one\n" +
-                "Expected: " + expectedResultText + "\nActual: " + resultText);
+        softAssert.assertTrue(resultText.equals(expectedResultText), "\nResult text is not the right one\n" +
+                "Expected: " + expectedResultText + "\nActual: " + resultText + "\n");
+
+        softAssert.assertAll();
 
     }
 
@@ -84,6 +95,10 @@ public class AlertsTests extends TestUtilities {
     @Test
     public void jsDismissTest() {
         log.info("Starting jsDismissTest");
+
+        //Adding Soft Assert
+        SoftAssert softAssert = new SoftAssert();
+
         //Open main page
         WelcomePage welcomePage = new WelcomePage(driver, log);
         welcomePage.openPage();
@@ -105,13 +120,15 @@ public class AlertsTests extends TestUtilities {
 
         //Verify if alert text is the expected
         String expectedAlertText = "I am a JS Confirm";
-        Assert.assertTrue(alertText.contains(expectedAlertText), "\nAlert text text is not the right one\n" +
-                "Expected: " + expectedAlertText + "Actual: " + alertText);
+        softAssert.assertTrue(alertText.equals(expectedAlertText), "\nAlert text text is not the right one\n" +
+                "Expected: " + expectedAlertText + "\nActual: " + alertText + "\n");
 
         //Verify if the result text is the expected
         String expectedResultText = "You clicked: Cancel";
-        Assert.assertTrue(resultText.contains(expectedResultText), "\nResult text is not the right one\n" +
-                "Expected: " + expectedResultText + "\nActual: " + resultText);
+        softAssert.assertTrue(resultText.equals(expectedResultText), "\nResult text is not the right one\n" +
+                "Expected: " + expectedResultText + "\nActual: " + resultText + "\n");
+
+        softAssert.assertAll();
 
     }
 
@@ -119,6 +136,10 @@ public class AlertsTests extends TestUtilities {
     @Test
     public void jsPromptTest() {
         log.info("Starting jsPromptTest");
+
+        //Adding Soft Assert
+        SoftAssert softAssert = new SoftAssert();
+
 
         //Open main page
         WelcomePage welcomePage = new WelcomePage(driver, log);
@@ -142,13 +163,15 @@ public class AlertsTests extends TestUtilities {
 
         //Verify if alert text is the expected
         String expectedAlertText = "I am a JS prompt";
-        Assert.assertTrue(alertText.contains(expectedAlertText), "\nAlert text text is not the right one\n" +
-                "Expected: " + expectedAlertText + "\nActual: " + alertText);
+        softAssert.assertTrue(alertText.equals(expectedAlertText), "\nAlert text text is not the right one\n" +
+                "Expected: " + expectedAlertText + "\nActual: " + alertText + "\n");
 
         //Verify if the result text is the expected
         String expectedResultText = "You entered: " + enteredText;
-        Assert.assertTrue(resultText.contains(expectedResultText), "\nResult text is not the right one\n" +
-                "Expected: " + expectedResultText + "\nActual: " + resultText);
+        softAssert.assertTrue(resultText.equals(expectedResultText), "\nResult text is not the right one\n" +
+                "Expected: " + expectedResultText + "\nActual: " + resultText + "\n");
+
+        softAssert.assertAll();
 
     }
 
