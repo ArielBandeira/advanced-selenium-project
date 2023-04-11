@@ -6,8 +6,8 @@ import com.herokuapp.theinternet.base.TestUtilities;
 import com.herokuapp.theinternet.pages.LoginPage;
 import com.herokuapp.theinternet.pages.WelcomePage;
 import org.testng.Assert;
-import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 
 import java.util.Map;
 
@@ -15,6 +15,8 @@ public class NegativeLoginTests extends TestUtilities {
 
     @Test( dataProvider = "csvReader", dataProviderClass = CsvDataProviders.class )
     public void negativeLoginTest(Map<String, String> testData) {
+        SoftAssert softAssert = new SoftAssert();
+
         //Data variables
         String no = testData.get("no");
         String username = testData.get("username");
@@ -32,14 +34,14 @@ public class NegativeLoginTests extends TestUtilities {
         LoginPage loginPage = welcomePage.clickFormAuthenticationLink();
 
         //Login with the wrong credentials
-        loginPage.negativeLogin(username, password);
+        loginPage.executingLogin(username, password);
 
         //Verify if fail login message is displayed
         loginPage.waitForErrorMessage();
         String message = loginPage.getFailLoginMessageText();
 
         //Verification
-        Assert.assertTrue(message.contains(expectedErrorMessage), "Error message does not contain expected message\n"
+        softAssert.assertTrue(message.contains(expectedErrorMessage), "Error message does not contain expected message\n"
         + "Expected message: " + expectedErrorMessage + "Actual message: " + message);
 
     }

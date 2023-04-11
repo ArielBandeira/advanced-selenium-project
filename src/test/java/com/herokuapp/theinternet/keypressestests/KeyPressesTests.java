@@ -11,8 +11,6 @@ public class KeyPressesTests extends TestUtilities {
 
     @Test
     public void pressKeyTest() {
-        log.info("Starting Key pressKeyTest");
-
         //Open keyPressesPage
         WelcomePage welcomePage = new WelcomePage(driver, log);
         welcomePage.openPage();
@@ -31,8 +29,6 @@ public class KeyPressesTests extends TestUtilities {
 
     @Test
     public void pressKeyWithActionTest() {
-        log.info("Starting pressKeyWithActionTest");
-
         //Open keyPressesPage
         WelcomePage welcomePage = new WelcomePage(driver, log);
         welcomePage.openPage();

@@ -12,8 +12,6 @@ public class DropdownTests extends TestUtilities {
     @Parameters({ "optionSelected" })
     @Test
     public void selectOptionTest(Integer optionSelected) {
-        log.info("Starting selectOptionTest");
-
         //Open main page
         WelcomePage welcomePage = new WelcomePage(driver, log);
         welcomePage.openPage();

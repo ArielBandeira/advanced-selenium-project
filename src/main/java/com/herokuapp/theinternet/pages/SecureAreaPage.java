@@ -9,7 +9,7 @@ public class SecureAreaPage extends BasePageObject {
 
     String pageUrl = "https://the-internet.herokuapp.com/secure";
     private By logoutButton = By.xpath("//a[@href='/logout']");
-    private By successMessage = By.id("flash");
+    private By successMessageLocator = By.id("flash");
     public SecureAreaPage(WebDriver driver, Logger log) {
         super(driver, log);
     }
@@ -28,8 +28,9 @@ public class SecureAreaPage extends BasePageObject {
 
     //Compare actual message with expected success message
     public String getSuccessMessageText() {
-        log.info("Return success message");
-        return find(successMessage).getText();
+        String successMessage = find(successMessageLocator).getText();
+        log.info("Return success message: " + successMessage);
+        return successMessage;
     }
 
 }

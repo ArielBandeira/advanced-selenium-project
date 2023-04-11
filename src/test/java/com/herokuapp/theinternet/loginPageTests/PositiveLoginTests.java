@@ -1,18 +1,30 @@
 package com.herokuapp.theinternet.loginPageTests;
 
 
+import com.herokuapp.theinternet.base.CsvDataProviders;
 import com.herokuapp.theinternet.base.TestUtilities;
 import com.herokuapp.theinternet.pages.LoginPage;
 import com.herokuapp.theinternet.pages.SecureAreaPage;
 import com.herokuapp.theinternet.pages.WelcomePage;
-import org.testng.Assert;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
+
+import java.util.Map;
 
 public class PositiveLoginTests extends TestUtilities {
 
-    @Test
-    public void positiveLoginTest() {
-        log.info("Stating positiveLoginTest");
+    @Test( dataProvider = "csvReader", dataProviderClass = CsvDataProviders.class )
+    public void positiveLoginTest(Map<String, String> testData) {
+        SoftAssert softAssert = new SoftAssert();
+
+        //Data variables
+        String no = testData.get("no");
+        String username = testData.get("username");
+        String password = testData.get("password");
+        String expectedErrorMessage = testData.get("expectedMessage");
+        String description = testData.get("description");
+
+        log.info("Stating positiveLoginTest #" + no + " for [" + description + "]");
 
         //Open main page
         WelcomePage welcomePage = new WelcomePage(driver, log);
@@ -25,20 +37,24 @@ public class PositiveLoginTests extends TestUtilities {
 
         //Execute login
         log.info("Execute login");
-        SecureAreaPage secureAreaPage = loginPage.logIn("tomsmith", "SuperSecretPassword!");
+        SecureAreaPage secureAreaPage = loginPage.executingLogin(username, password);
         takeScreenshot("SecureAreaPage opened");
 
         //Verifications
         //New page url is the expected
-        Assert.assertEquals(secureAreaPage.getCurrentUrl(), secureAreaPage.getPageUrl());
+        String actualUrl = driver.getCurrentUrl();
+        String expectedUrl = secureAreaPage.getPageUrl();
+
+        softAssert.assertEquals(actualUrl, expectedUrl);
+        log.info("\nActual: " + actualUrl + "\nExpected: " + expectedUrl + "\n");
 
         //Logout button is visible
-        Assert.assertTrue(secureAreaPage.logoutButtonVisible(), "Logout button is not visible");
+        softAssert.assertTrue(secureAreaPage.logoutButtonVisible(), "Logout button is not visible");
 
         //Successful login message
         String expectedSuccessMessage = "You logged into a secure area!";
         String actualSuccessMessage = secureAreaPage.getSuccessMessageText();
-        Assert.assertTrue(actualSuccessMessage.contains(expectedSuccessMessage),
+        softAssert.assertTrue(actualSuccessMessage.contains(expectedSuccessMessage),
                 "\nActual success message dos not contain expected success message\nExpected message: "
                         + expectedSuccessMessage + "\nActual message: " + actualSuccessMessage + "\n");
 

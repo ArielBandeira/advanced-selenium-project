@@ -10,8 +10,6 @@ public class EditorTests extends TestUtilities {
 
     @Test
     public void defaultEditorValueTest() {
-        log.info("Starting defaultEditorValueTest");
-
         //Open Main page
         WelcomePage welcomePage = new WelcomePage(driver, log);
         welcomePage.openPage();

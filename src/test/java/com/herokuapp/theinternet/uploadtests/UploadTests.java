@@ -10,7 +10,6 @@ public class UploadTests extends TestUtilities {
 
     @Test(dataProvider = "files")
     public void fileUploadTest(int no, String fileName) {
-        log.info("Starting Key fileUploadTest #" + no + " for " + fileName);
         //Open File Upload page
         WelcomePage welcomePage = new WelcomePage(driver, log);
         welcomePage.openPage();

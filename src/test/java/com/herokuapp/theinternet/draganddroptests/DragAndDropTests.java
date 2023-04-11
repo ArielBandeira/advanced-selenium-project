@@ -9,7 +9,6 @@ import org.testng.annotations.Test;
 public class DragAndDropTests extends TestUtilities {
     @Test
     public void dragAToBTest() {
-        log.info("Starting dragAToBTest");
         //Open Drag and Drop page from Main Page
         WelcomePage welcomePage = new WelcomePage(driver, log);
         welcomePage.openPage();

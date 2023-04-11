@@ -30,7 +30,7 @@ public class TestListener implements ITestListener {
 
     @Override
     public void onTestSkipped(ITestResult result) {
-        log.info("[Test " + testMethodName + "skipped");
+        log.info("[Test " + testMethodName + "skipped]");
     }
 
     @Override
@@ -40,7 +40,7 @@ public class TestListener implements ITestListener {
     public void onStart(ITestContext context) {
         this.testName = context.getCurrentXmlTest().getName();
         this.log = LogManager.getLogger(testName);
-        log.info("[TEST " + testName + " STARTED");
+        log.info("[TEST " + testName + " STARTED]");
     }
 
     @Override

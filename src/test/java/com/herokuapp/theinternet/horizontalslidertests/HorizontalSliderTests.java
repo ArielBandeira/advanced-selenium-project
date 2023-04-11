@@ -12,8 +12,6 @@ public class HorizontalSliderTests extends TestUtilities {
     @Parameters({ "rangeValue" })
     @Test
     public void sliderTest(String rangeValue) {
-        log.info("Starting sliderTest with value " + rangeValue);
-
         //Open Horizontal Slider page from Main page
         WelcomePage welcomePage = new WelcomePage(driver, log);
         welcomePage.openPage();

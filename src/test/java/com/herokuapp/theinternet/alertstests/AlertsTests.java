@@ -13,8 +13,6 @@ public class AlertsTests extends TestUtilities {
     //JS Alert test
     @Test
     public void jsAlertTest() {
-        log.info("Starting jsAlertTest");
-
         //Adding Soft Assert
         SoftAssert softAssert = new SoftAssert();
 
@@ -53,8 +51,6 @@ public class AlertsTests extends TestUtilities {
     //JS Accept test
     @Test
     public void jsAcceptTest() {
-        log.info("Starting jsAcceptTest");
-
         //Adding Soft Assert
         SoftAssert softAssert = new SoftAssert();
 
@@ -94,8 +90,6 @@ public class AlertsTests extends TestUtilities {
     //JS Dismiss test
     @Test
     public void jsDismissTest() {
-        log.info("Starting jsDismissTest");
-
         //Adding Soft Assert
         SoftAssert softAssert = new SoftAssert();
 
@@ -135,8 +129,6 @@ public class AlertsTests extends TestUtilities {
     //JS Prompt test
     @Test
     public void jsPromptTest() {
-        log.info("Starting jsPromptTest");
-
         //Adding Soft Assert
         SoftAssert softAssert = new SoftAssert();
 

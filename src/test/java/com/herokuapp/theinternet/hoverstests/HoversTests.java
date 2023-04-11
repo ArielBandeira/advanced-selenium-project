@@ -13,8 +13,6 @@ public class HoversTests extends TestUtilities {
     @Parameters({ "profile" })
     @Test
     public void userOneProfileTest(String profile) {
-        log.info("Starting userOneProfileTest");
-
         //Open Hovers page from main page
         WelcomePage welcomePage = new WelcomePage(driver, log);
         welcomePage.openPage();

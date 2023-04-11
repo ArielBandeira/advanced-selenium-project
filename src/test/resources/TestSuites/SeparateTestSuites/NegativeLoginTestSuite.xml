@@ -22,7 +22,7 @@
 
     <test name="NegativeLoginTest">
         <classes>
-            <class name="com.herokuapp.theinternet.loginPageTests.NegativeLoginTests"></class>
+            <class name="com.herokuapp.theinternet.loginPageTests.NegativeLoginTests" />
         </classes>
     </test>
 
