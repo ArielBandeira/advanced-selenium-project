@@ -4,8 +4,11 @@ import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
-import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
+
+import java.util.HashMap;
+import java.util.Map;
 
 public class BrowserDriverFactory {
 
@@ -32,6 +35,28 @@ public class BrowserDriverFactory {
             }
         }
 
+        return driver.get();
+    }
+
+    public WebDriver createFirefoxWithProfile(String profile) {
+        log.info("Starting firefox driver with profile: " + profile);
+        FirefoxOptions firefoxOptions = new FirefoxOptions();
+        firefoxOptions.addArguments("user-data-dir=src/main/resources/Profiles");
+
+        System.setProperty("webdriver.firefox.driver", "src/main/resources/geckodriver.exe");
+        driver.set(new FirefoxDriver(firefoxOptions));
+        return driver.get();
+    }
+
+    public WebDriver createFirefoxWithMobileEmulator(String deviceName) {
+        log.info("Starting driver with " + deviceName + " emulation");
+        Map<String, String> mobileEmulation = new HashMap<>();
+        mobileEmulation.put("deviceName", deviceName);
+        FirefoxOptions firefoxOptions = new FirefoxOptions();
+        //firefoxOptions.setExperimentalOption("mobileEmulation", mobileEmulation);
+
+        System.setProperty("webdriver.firefox.driver", "src/main/resources/geckodriver.exe");
+        driver.set(new FirefoxDriver(firefoxOptions));
         return driver.get();
     }
 

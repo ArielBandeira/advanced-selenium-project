@@ -2,7 +2,14 @@
 
 <suite name="PositiveLoginTestSuite" verbose="1">
 
-    <test name="PositiveLoginTest">
+    <test name="PositiveLoginTestWithProfile">
+        <parameter name="firefoxProfile" value="FirefoxProfile" />
+        <classes>
+            <class name="com.herokuapp.theinternet.loginPageTests.PositiveLoginTests" />
+        </classes>
+    </test>
+
+    <test name="PositiveLoginTestWithoutProfile">
         <classes>
             <class name="com.herokuapp.theinternet.loginPageTests.PositiveLoginTests" />
         </classes>

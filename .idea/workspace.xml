@@ -6,8 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="14410494-553f-4bbb-a30e-9bd0b9bef812" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/herokuapp/theinternet/pages/BasePageObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/herokuapp/theinternet/pages/BasePageObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/herokuapp/theinternet/loginPageTests/PositiveLoginTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/herokuapp/theinternet/loginPageTests/PositiveLoginTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/herokuapp/theinternet/base/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/herokuapp/theinternet/base/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/herokuapp/theinternet/base/BrowserDriverFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/herokuapp/theinternet/base/BrowserDriverFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/TestSuites/SeparateTestSuites/CheckboxesTestSuite.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/TestSuites/SeparateTestSuites/CheckboxesTestSuite.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/TestSuites/SeparateTestSuites/PositiveLoginTestSuite.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/TestSuites/SeparateTestSuites/PositiveLoginTestSuite.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +59,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/ariel/learning_projects/selenium/advanced-selenium-project/src/main/resources/files&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/ariel/learning_projects/selenium/advanced-selenium-project/src/main/resources/Profiles/FirefoxProfile&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
@@ -66,6 +68,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\ariel\learning_projects\selenium\advanced-selenium-project\src\main\resources\Profiles\FirefoxProfile" />
       <recent name="C:\Users\ariel\learning_projects\selenium\advanced-selenium-project\src\main\resources\files" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
