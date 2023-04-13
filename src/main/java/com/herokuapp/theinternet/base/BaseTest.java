@@ -20,14 +20,20 @@ public class BaseTest {
     protected String testName;
     protected String testMethodName;
 
-    @Parameters({ "browser" })
+    @Parameters({ "browser", "firefoxProfile", "deviceName" })
     @BeforeMethod( alwaysRun = true )
-    public void setUp(Method method, @Optional("Firefox") String browser, ITestContext ctx) {
+    public void setUp(Method method, @Optional("Firefox") String browser, @Optional String profile, @Optional String deviceName, ITestContext ctx) {
         String testName = ctx.getCurrentXmlTest().getName();
         log = LogManager.getLogger(testName);
 
         BrowserDriverFactory factory = new BrowserDriverFactory(browser, log);
-        driver = factory.createDriver();
+        if (profile != null) {
+            driver = factory.createFirefoxWithProfile(profile);
+        } else if (deviceName != null) {
+            driver = factory.createFirefoxWithMobileEmulator(deviceName);
+        } else {
+            driver = factory.createDriver();
+        }
 
         driver.manage().window().maximize();
 
